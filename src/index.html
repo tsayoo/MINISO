@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINISO</title>
+  <link rel="stylesheet" href="output.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="../images/paper_miniso__1__2-removebg-preview.png" type="image/x-icon">
+  <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+</head>
+
+<body>
+  <!-- Navbarr -->
+  <nav class="bg-white">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://www.miniso.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="../images/logo.png" class="h-8" />
+        <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-black dark:hover:bg-red-600"
+        aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-white rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-red-600 md:dark:bg-white dark:border-red-600">
+          <li>
+            <a href="#Carousel"
+              class="block py-2 px-3 text-white rounded md:bg-transparent md:text-red-600 md:p-0 md:dark:bg-transparent"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:text-red-600 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:text-red-600 md:hover:text-red-400 dark:text-white md:dark:hover:text-red-400 dark:focus:text-white dark:hover:bg-white md:dark:hover:bg-transparent">
+              Best Products
+              <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="#1"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#2"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                </li>
+                <li>
+                  <a href="#3"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                </li>
+                <li>
+                  <a href="#4"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                </li>
+              </ul>
+            </div>
+          <li>
+            <a href="#News"
+              class="block py-2 px-3 text-black rounded md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 md:dark:text-red-600 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-white dark:hover:text-red-600 md:dark:hover:bg-transparent">News</a>
+          </li>
+          <li>
+            <a href="#Footer"
+              class="block py-2 px-3 text-black rounded md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 md:dark:text-red-600 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-white dark:hover:text-red-600 md:dark:hover:bg-transparent">Contact</a>
+          </li>
+          <li>
+            <a href="sign.html"
+              class="block py-2 px-3 text-black rounded md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 md:dark:text-red-600 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-white dark:hover:text-red-600 md:dark:hover:bg-transparent">Sign
+              in</a>
+          </li>
+      </div>
+      </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <div id="carouselExampleCrossfade" class="relative" data-te-carousel-init data-te-ride="carousel">
+    <!--Carousel indicators-->
+    <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+      data-te-carousel-indicators>
+      <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="0" data-te-carousel-active
+        class="mx-[3px] box-content w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none max-w-full h-auto"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="1"
+        class="mx-[3px] box-content w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none max-w-full h-auto"
+        aria-label="Slide 2"></button>
+      <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="2"
+        class="mx-[3px] box-content w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none max-w-full h-auto"
+        aria-label="Slide 3"></button>
+      <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="3"
+        class="mx-[3px] box-content w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none max-w-full h-auto"
+        aria-label="Slide 4"></button>
+      <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="4"
+        class="mx-[3px] box-content w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none max-w-full h-auto"
+        aria-label="Slide 5"></button>
+      <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="5"
+        class="mx-[3px] box-content w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none max-w-full h-auto"
+        aria-label="Slide 6"></button>
+    </div>
+
+    <!--Carousel items-->
+    <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+      <!--First item-->
+      <div
+        class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
+        <img src="../images/1.png" class="block w-full" />
+      </div>
+      <!--Second item-->
+      <div
+        class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-fade data-te-carousel-item>
+        <img src="../images/2.png" class="block w-full" />
+      </div>
+      <!--Third item-->
+      <div
+        class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-fade data-te-carousel-item>
+        <img src="../images/3.png" class="block w-full" />
+      </div>
+      <!--Third item-->
+      <div
+        class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-fade data-te-carousel-item>
+        <img src="../images/4.png" class="block w-full" />
+      </div>
+      <!--Third item-->
+      <div
+        class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-fade data-te-carousel-item>
+        <img src="../images/5.png" class="block w-full" />
+      </div>
+      <!--Third item-->
+      <div
+        class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-fade data-te-carousel-item>
+        <img src="../images/6.png" class="block w-full" />
+      </div>
+    </div>
+
+    <!--Carousel controls - prev item-->
+    <button
+      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-red-600 opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-neutral-600 hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button" data-te-target="#carouselExampleCrossfade" data-te-slide="prev">
+      <span class="inline-block h-8 w-8">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="h-6 w-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+    </button>
+    <!--Carousel controls - next item-->
+    <button
+      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-red-600 opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-neutral-600 hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button" data-te-target="#carouselExampleCrossfade" data-te-slide="next">
+      <span class="inline-block h-8 w-8">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="h-6 w-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+    </button>
+  </div>
+
+  <!-- sales -->
+  <div class="container mx-auto">
+    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center my-8" id="Best">Best Products</h2>
+
+    <!-- Recommended post -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 items-center">
+      <div class="mx-1 mt-6 flex flex-col rounded-lg bg-white shadow-md dark:bg-neutral-700" id="1">
+        <a href="#!">
+          <img class="rounded-t-lg object-cover h-64 mx-auto mt-[15px]" src="../images/bola salju we bare bears.png"/>
+        </a>
+        <div class="p-6">
+          <h5
+            class="mb-2 text-lg md:text-xl lg:text-2xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Bola Salju</h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">Sebuah Bola Salju yang berisi beruang lucu dari serial We Bare Bears yang dapat menghibur harimu!</p>
+        </div>
+      </div>
+      <div class="mx-1 mt-6 flex flex-col rounded-lg bg-white shadow-md dark:bg-neutral-700" id="2">
+        <a href="#!">
+          <img class="rounded-t-lg object-cover h-64 mx-auto mt-[15px]" src="../images/figur kuromi.png"/>
+        </a>
+        <div class="p-6">
+          <h5
+            class="mb-2 text-lg md:text-xl lg:text-2xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Card title</h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">This is a longer card with supporting text
+            below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+      <div class="mx-1 mt-6 flex flex-col rounded-lg bg-white shadow-md dark:bg-neutral-700" id="3">
+        <a href="#!">
+          <img class="rounded-t-lg object-cover h-64 mx-auto mt-[15px]" src="../images/headphone hitam dan sage.png"/>
+        </a>
+        <div class="p-6">
+          <h5
+            class="mb-2 text-lg md:text-xl lg:text-2xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Card title</h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">This is a longer card with supporting text
+            below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+      <div class="mx-1 mt-6 flex flex-col rounded-lg bg-white shadow-md dark:bg-neutral-700" id="4">
+        <a href="#!">
+          <img class="rounded-t-lg object-cover h-64 mx-auto mt-[15px]" src="../images/boneka penguin salju.png"/>
+        </a>
+        <div class="p-6">
+          <h5
+            class="mb-2 text-lg md:text-xl lg:text-2xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Card title</h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">This is a longer card with supporting text
+            below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- btn -->
+  <div class="flex justify-center my-9">
+    <button onclick="showConfirmation()" type="button"
+      class="inline-block bg-red-600 hover:bg-red-400 text-white font-bold py-2 px-4 rounded">
+      See Others Products
+    </button>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="items-center text-center bg-red-600 my-4">
+    <a class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] mb-4"
+      data-te-collapse-init data-te-ripple-init data-te-ripple-color="light" href="#multiCollapseExample1" role="button"
+      aria-expanded="false" aria-controls="multiCollapseExample1">Testimoni #1 </a>
+    <a class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] mb-4"
+      data-te-collapse-init data-te-ripple-init data-te-ripple-color="light" href="#multiCollapseExample2" role="button"
+      aria-expanded="false" aria-controls="multiCollapseExample2">Testimoni #2 </a>
+    <a class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca]
+    transition duration-150 ease-in-out hover:bg-primary-600
+    hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] 
+    focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+    focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+    dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+    dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+    dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+    mb-4 mt-10 cursor-pointer" data-te-collapse-init data-te-target=".multi-collapse" data-te-ripple-init
+      data-te-ripple-color="" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+      Toggle Both</a>
+    <div class="grid gap-4 md:grid-cols-2 text-left my-5">
+      <div>
+        <div class="multi-collapse !visible hidden rounded-lg shadow-lg mb-8" data-te-collapse-item
+          id="multiCollapseExample1">
+          <div
+            class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50">
+            Some placeholder content for the first collapse component of this
+            multi-collapse example. This panel is hidden by default but
+            revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="multi-collapse !visible hidden rounded-lg shadow-lg mb-8" data-te-collapse-item
+          id="multiCollapseExample2">
+          <div
+            class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50">
+            Some placeholder content for the second collapse component of this
+            multi-collapse example. This panel is hidden by default but
+            revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- News -->
+  <div>
+    <h2 class="text-5xl font-bold text-center my-2">Our News</h2>
+  </div>
+  <div class="grid-cols-1 sm:grid md:grid-cols-3 mb-[65px]" id="News">
+    <div
+      class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+      <a href="#!">
+        <img class="rounded-t-lg" src="https://tecdn.b-cdn.net/img/new/standard/city/044.webp" alt="Skyscrapers" />
+      </a>
+      <div class="p-6">
+        <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+          Card title
+        </h5>
+        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          This is a wider card with supporting text below as a natural
+          lead-in to additional content. This content is a little bit
+          longer.
+        </p>
+      </div>
+      <div
+        class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
+        <small>Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div
+      class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+      <a href="#!">
+        <img class="rounded-t-lg" src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+          alt="Los Angeles Skyscrapers" />
+      </a>
+      <div class="p-6">
+        <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+          Card title
+        </h5>
+        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          This card has supporting text below as a natural lead-in to
+          additional content.
+        </p>
+      </div>
+      <div
+        class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
+        <small>Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div
+      class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+      <a href="#!">
+        <img class="rounded-t-lg" src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
+          alt="Palm Springs Road" />
+      </a>
+      <div class="p-6">
+        <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+          Card title
+        </h5>
+        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          This is a wider card with supporting text below as a natural
+          lead-in to additional content. This card has even longer content
+          than the first to show that equal height action.
+        </p>
+      </div>
+      <div
+        class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
+        <small>Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <h1 class="text-center text-[40px] font-bold my-5">Ask Something Here!</h1>
+  <div id="accordionFlushExample">
+    <div
+      class="rounded-none border border-l-0 border-r-0 border-t-0 border-black bg-white dark:border-black dark:bg-red-600 text-white my-2">
+      <h2 class="mb-0" id="flush-headingOne">
+        <button
+          class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-red-600 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-red-400 [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-red-700 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+          type="button" data-te-collapse-init data-te-target="#flush-collapseOne" aria-expanded="false"
+          aria-controls="flush-collapseOne">
+          Question #1
+          <span
+            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="!visible border-0" data-te-collapse-item data-te-collapse-show
+        aria-labelledby="flush-headingOne" data-te-parent="#accordionFlushExample">
+        <div class="px-5 py-4">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the
+          class. This is the first item's
+          accordion body.
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-none border border-l-0 border-r-0 border-t-0 border-black bg-white dark:border-black dark:bg-red-600 text-white my-2">
+      <h2 class="mb-0" id="flush-headingTwo">
+        <button
+          class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-red-600 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-red-400 [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-red-700 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+          type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseTwo"
+          aria-expanded="false" aria-controls="flush-collapseTwo">
+          Question #2
+          <span
+            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="!visible hidden border-0" data-te-collapse-item
+        aria-labelledby="flush-headingTwo" data-te-parent="#accordionFlushExample">
+        <div class="px-5 py-4">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the
+          <code>.accordion-flush</code> class. This is the second item's
+          accordion body. Let's imagine this being filled with some actual
+          content.
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-none border border-b-0 border-l-0 border-r-0 border-t-0 border-black bg-white dark:border-black dark:bg-red-600 text-white my-2 mb-[70px]">
+      <h2 class="mb-0" id="flush-headingThree">
+        <button
+          class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-red-600 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-red-400 [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-red-700 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+          type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseThree"
+          aria-expanded="false" aria-controls="flush-collapseThree">
+          Question #3
+          <span
+            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="!visible hidden" data-te-collapse-item aria-labelledby="flush-headingThree"
+        data-te-parent="#accordionFlushExample">
+        <div class="px-5 py-4">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the
+          <code>.accordion-flush</code> class. This is the third item's
+          accordion body. Nothing more exciting happening here in terms of
+          content, but just filling up the space to make it look, at least
+          at first glance, a bit more representative of how this would look
+          in a real-world application.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <!-- Footer container -->
+  <footer class="bg-neutral-300 text-center text-neutral-600 dark:bg-neutral-300 dark:text-neutral-900 lg:text-left"
+    id="Footer">
+    <div
+      class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
+      <div class="mr-12 hidden lg:block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Social network icons container -->
+      <div class="flex justify-center">
+        <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
+          <!-- Facebook -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" style="color: #1877f2"
+            viewBox="0 0 24 24">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+          </svg>
+        </a>
+
+        <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
+          <!-- Instagram -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" style="color: #c13584"
+            viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+
+        <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
+          <!-- Google -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" style="color: #ea4335"
+            viewBox="0 0 24 24">
+            <path
+              d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+              fill-rule="evenodd" clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
+          <!-- Youtube -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" style="color: #ff0000"
+            viewBox="0 0 24 24">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+          </svg>
+
+        </a>
+
+        <a href="#!" class="text-neutral-600 dark:text-neutral-200">
+          <!-- TikTok -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-7 w-7" style="color: #6a76ac">
+            <path fill="currentColor"
+              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+          </svg>
+        </a>
+        <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
+          <!-- Pinterest -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" style="color: #e60023"
+            viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+              fill-rule="evenodd" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Main container div: holds the entire content of the footer, including four sections (TW elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+    <div class="mx-6 py-10 text-center md:text-left">
+      <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="">
+          <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="38" height="30" fill="currentColor">
+              <path
+                d="M7.00488 7.99966V5.99966C7.00488 3.23824 9.24346 0.999664 12.0049 0.999664C14.7663 0.999664 17.0049 3.23824 17.0049 5.99966V7.99966H20.0049C20.5572 7.99966 21.0049 8.44738 21.0049 8.99966V20.9997C21.0049 21.5519 20.5572 21.9997 20.0049 21.9997H4.00488C3.4526 21.9997 3.00488 21.5519 3.00488 20.9997V8.99966C3.00488 8.44738 3.4526 7.99966 4.00488 7.99966H7.00488ZM7.00488 9.99966H5.00488V19.9997H19.0049V9.99966H17.0049V11.9997H15.0049V9.99966H9.00488V11.9997H7.00488V9.99966ZM9.00488 7.99966H15.0049V5.99966C15.0049 4.34281 13.6617 2.99966 12.0049 2.99966C10.348 2.99966 9.00488 4.34281 9.00488 5.99966V7.99966Z">
+              </path>
+            </svg>
+            MINISO
+          </h6>
+          <p>
+            toko pernak-pernik serba ada dengan harga yang terjangkau yang tersebar di berbagai pusat perbelanjaan
+            Indonesia.
+          </p>
+        </div>
+        <!-- Products section -->
+        <div class="">
+          <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Best Products
+          </h6>
+          <p class="mb-4">
+            <a href="#1" class="text-red-600">a</a>
+          </p>
+          <p class="mb-4">
+            <a href="#2" class="text-red-600">b</a>
+          </p>
+          <p class="mb-4">
+            <a href="#3" class="text-red-600">c</a>
+          </p>
+          <p>
+            <a href="#4" class="text-red-600">d</a>
+          </p>
+        </div>
+        <!-- Useful links section -->
+        <div class="">
+          <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Navbar
+          </h6>
+          <p class="mb-4">
+            <a href="#Carousel" class="text-red-600">Home</a>
+          </p>
+          <p class="mb-4">
+            <a href="#Best" class="text-red-600">Best Products</a>
+          </p>
+          <p class="mb-4">
+            <a href="#News" class="text-red-600">News</a>
+          </p>
+          <p>
+            <a href="sign.html" class="text-red-600">Sign in</a>
+          </p>
+        </div>
+        <!-- Contact section -->
+        <div>
+          <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Contact
+          </h6>
+          <p class="mb-4 flex items-center justify-center md:justify-start">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
+              class="mr-3
+            h-5 w-5">
+              <path
+                d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 15C14.2091 15 16 13.2091 16 11C16 8.79086 14.2091 7 12 7C9.79086 7 8 8.79086 8 11C8 13.2091 9.79086 15 12 15ZM12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13Z">
+              </path>
+            </svg>
+            Kanton Guangzhou, Tiongkok
+          </p>
+          <p class="mb-4 flex items-center justify-center md:justify-start">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-3 h-5 w-5">
+              <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+              <path
+                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+            </svg>
+            www.miniso.com
+          </p>
+          <p class="mb-4 flex items-center justify-center md:justify-start">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-3 h-5 w-5">
+              <path fill-rule="evenodd"
+                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                clip-rule="evenodd" />
+            </svg>
+            + 86 975 4213
+          </p>
+          <p class="flex items-center justify-center md:justify-start">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
+              class="mr-3 h-5 w-5">
+              <path
+                d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z">
+              </path>
+            </svg>
+            + 86 125 3479
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Copyright section-->
+    <div class="bg-red-600 p-6 text-center">
+      <span>© 2023 Copyright:</span>
+      <a class="font-semibold text-white" href="">Tsayoo</a>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- Tw-elements -->
+  <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+  <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  <script src="main.js"></script>
+  <!-- flowbite -->
+  <!-- <script src="../path/to/flowbite/dist/flowbite.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <script>
+    function showConfirmation() {
+      var confirmation = confirm('Apakah Anda yakin ingin melanjutkan ke halaman sign in?');
+      if (confirmation) {
+        window.location.href = 'menu.html';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
